@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3">
+      <h2 align="center">New Blog</h2>
+      <div class="form-group">
+        <input type="text" name="heading" id=""  [(ngModel)]="heading" class="form-control" placeholder="Blog Heading" aria-describedby="helpId">
+        <!-- <small id="helpId" class="text-muted">Help text</small> -->
+      </div>
+
+      <div class="form-group">
+        <label>Blog Content</label>
+        <textarea class="form-control" name="blogContent" id="" [(ngModel)]="content" rows="10"></textarea>
+      </div>
+      <button type="button" name="" id="" class="btn btn-info btn-lg btn-block col-sm-2 offset-sm-5" (click)="test()" align="center">Submit</button>
+    </div>
+  </div>
+
+  <span (addBlog)="adding()"><button>adding</button></span>
+  
+</div>
